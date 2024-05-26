@@ -12,7 +12,7 @@ WORKDIR ${WORKDIR}
 COPY . .
 # NOTE: Assumes Tailwind and Templ files have been generated previously
 # Do `go run ./build` before building docker image
-RUN go build -o ${BIN_NAME} .
+RUN go build -o ${BIN_NAME} ./app
 
 FROM alpine
 
