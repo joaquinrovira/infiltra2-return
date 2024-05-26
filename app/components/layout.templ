@@ -1,0 +1,28 @@
+package components
+
+templ Layout() {
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+            <title>Infiltra2</title> // TODO: language detection
+            <link rel="stylesheet" href="/_/tailwind.css" type="text/css"/>
+            <script src="/_/htmx.min.js"></script>
+            <script src="/_/htmx.sse.js"></script>
+            <script defer src="/_/alpine@3.13.8.min.js"></script>
+            // <script defer src="/_/idiomorph@0.3.0.min.js"></script>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+
+        </head>
+
+
+		<body class={"bg-zinc-50 min-h-[100vh] flex flex-col"}>
+            {children...}
+		</body>
+    </html>
+}

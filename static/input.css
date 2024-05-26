@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-accent: 39 121 167;
+        --color-primary: 255 147 152;
+        --color-secondary: 209 72 54;
+        --color-primary-dark: 93 42 66;
+        --color-secondary-dark: 125 46 104;
+    }
+
+    :root[class~="dark"] {
+        --color-accent: 36 52 238;
+        --color-primary: 138 55 61;
+        --color-secondary: 81 50 46;
+        --color-primary-dark: 37 26 32;
+        --color-secondary-dark: 50 33 46;
+    }
+
+    html,
+    body {
+        min-height: 100vh;
+    }
+}

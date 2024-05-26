@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test Page</title>
+    <style>
+        .clipper {
+            clip-path: circle(48px at 50% 50%);
+        }
+
+        @keyframes test {
+            from {
+                clip-path: circle(70px at 0% 50%);
+                transform: translateX(15%);
+                scale: 1.4;
+            }
+
+            to {
+                clip-path: circle(70px at 94% 50%);
+                transform: translateX(-15%);
+                scale: 1.4;
+            }
+        }
+
+        @keyframes test2 {
+            from {
+                transform: translateX(-30%);
+            }
+
+            to {
+                transform: translateX(30%);
+            }
+        }
+        :root {
+            --circle-radius: 5rem;
+        }
+
+        @keyframes test3 {
+            from {
+                clip-path: circle(var(--circle-radius) at 0% 50%);
+                left: 0;
+                transform: translateX(0%);
+            }
+
+            to {
+                clip-path: circle(var(--circle-radius) at 100% 50%);
+                left: 100%;
+                transform: translateX(-100%);
+            }
+        }
+
+
+        @keyframes test4 {
+            from {
+                left: calc(var(--circle-radius) * -1);
+                transform: translateX(0%);
+            }
+
+            to {
+                left: calc(100% + var(--circle-radius));
+                transform: translateX(-100%);
+            }
+        }
+
+        .myanimation {
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-name: test;
+        }
+
+        .myanimation2 {
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-name: test2;
+        }
+
+        .myanimation3 {
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-name: test3;
+        }
+
+        .myanimation4 {
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-name: test4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mt-10 text-center flex-col justify-center items-center">
+        <div class="z-10 font-serif text-9xl ">
+            <span class="relative w-0 bg-white whitespace-nowrap">
+                Infiltrado
+                <div class="absolute top-0 left-0 z-20 font-serif whitespace-nowrap bg-inherit myanimation">
+                    Infiltrado
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="mt-10 pt-10 border-t-4 border-black">
+        <div class="
+            mx-auto flex flex-col bg-white
+            justify-center items-center
+            w-[720px] h-80 relative
+        ">
+            <span class="text-9xl relative font-serif pb-10 bg-inherit">
+                Infiltrado
+                <div class="z-10 absolute top-0 left-0font-serif whitespace-nowrap bg-inherit myanimation">
+                    Infiltrado
+                </div>
+            </span>
+
+            <svg class="absolute myanimation2 z-20 top-0 left-0 h-[inherit] w-[inherit]"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.75"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="mt-10 pt-10 border-t-4 border-black">
+        <div
+            class="mx-auto flex flex-col bg-white justify-center items-center relative">
+            <span class="text-[calc(2_*_(var(--circle-radius)_-_1rem))] relative font-serif bg-inherit">
+                Infiltrado
+                <div class="z-10 absolute font-serif whitespace-nowrap bg-inherit myanimation3 top-0 bottom-0 my-auto">
+                    <span class="text-[calc(2_*_var(--circle-radius))] contents">Infiltrado</span>
+                </div>
+    
+    
+                <div
+                    class="absolute z-20 box-border border-2 border-red-500 h-[calc(2_*_var(--circle-radius))] w-[calc(2_*_var(--circle-radius))] myanimation4 top-0 bottom-0 my-auto">
+                    <div class="relative">
+                        <svg class="absolute top-[calc(-0.35_*_var(--circle-radius))] left-[calc(-0.35_*_var(--circle-radius))] h-[calc(3_*_var(--circle-radius))]"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+<div class="mt-10 pt-10 border-t-4 border-black">
+    <div class="mx-auto flex flex-col bg-white justify-center items-center relative">
+        <div class="text-[calc(2_*_(var(--circle-radius)_-_1rem))]">
+            <span>test</span>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
