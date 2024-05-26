@@ -10,7 +10,9 @@ ARG WORKDIR
 
 WORKDIR ${WORKDIR}
 COPY . .
-RUN go run ./build -outdir . -outname ${BIN_NAME}
+# NOTE: Assumes Tailwind and Templ files have been generated previously
+# Do `go run ./build` before building docker image
+RUN go build -o ${BIN_NAME} .
 
 FROM alpine
 
