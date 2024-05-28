@@ -3,9 +3,6 @@ package util
 import (
 	"hash/fnv"
 	"math/rand"
-
-	"golang.org/x/text/cases"
-	"golang.org/x/text/language"
 )
 
 // RandomInt returns a random integer for the given string.
@@ -22,32 +19,15 @@ func UserIdStringToInt(input string) int {
 	return generator.Int()
 }
 
-var adjectives = [...]string{
-	"adorable", "hermoso", "inteligente", "determinado", "ansioso", "fiero", "gracioso", "feliz",
-	"inquisitivo", "alegre", "amable", "animado", "misterioso", "noble", "optimista", "orgulloso",
-	"peculiar", "resiliente", "sincero", "considerado", "animado", "vibrante", "ingenioso", "apasionado",
+var names = [...]string{
+	"Alex Carter", "Jordan West", "Taylor Ward", "Casey Whateley", "Morgan Armitage",
+	"Riley Thurston", "Robin Pickman", "Avery Gilman", "Quinn Alhazred",
+	"Sam Waite", "Jamie Nyarla", "Cameron Curwen", "Reese Sothoth", "River Dagon",
+	"Shay Azathoth", "Emery Shub", "Parker Allen", "Sage Lynch", "Rowan Marsh",
+	"Devin Whateley", "Kai Olney", "Hunter Blake", "Taylor Lorry",
 }
 
-var animals = [...]string{
-	"oso", "tigre", "león", "elefante", "jirafa", "cebra", "guepardo", "hipopótamo",
-	"rinoceronte", "canguro", "koala", "panda", "mono", "gorila", "loro", "águila",
-	"búho", "lobo", "zorro", "conejo", "ciervo", "ardilla", "tortuga", "serpiente",
-}
-
-var adjectives_animals = []string{}
-
-func init() {
-	// Perform inner join of adjectives and animals
-	for _, adjective := range adjectives {
-		for _, animal := range animals {
-			capitalized := cases.Title(language.Und).String(animal + " " + adjective)
-			adjectives_animals = append(adjectives_animals, capitalized)
-		}
-	}
-}
-
-// AssignUserName assigns a name to a user based on two lists of words.
 func UserName(user_id string) string {
-	adjectives_animals_idx := UserIdStringToInt(user_id) % len(adjectives_animals)
-	return adjectives_animals[adjectives_animals_idx]
+	adjectives_animals_idx := UserIdStringToInt(user_id) % len(names)
+	return names[adjectives_animals_idx]
 }

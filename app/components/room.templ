@@ -107,7 +107,7 @@ templ RoomWord(user string, room *model.Room) {
 				<span class="inline-flex items-center justify-center">
 					<img
 						class="h-16 w-16 md:h-20 md:w-20 object-scale-down"
-						src="/_/logo-rae.png"
+						src="/_/img/logo-rae.png"
 					/>
 					<span class="w-16">Ver en la RAE</span>
 				</span>
@@ -123,7 +123,7 @@ templ UserCardSmol(user string, state model.UserRoomState, isUser bool) {
 			// TODO: Scale down user icons. 64px? 128? 32?
 			<img
 				class="p-1 h-[inherit] w-[inherit] object-scale-down rounded-full"
-				src={ "/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%9) + ".png" }
+				src={ "/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%11) + ".png" }
 			/>
 		</div>
 		<div class="contents mt-1 text-sm md:text-base">
@@ -160,7 +160,7 @@ templ UserCard(user string, state model.UserRoomState, isUser bool) {
 	<div class="backdrop-brightness-75 rounded-2xl flex justify-center p-3 w-full h-24 items-center transition-colors">
 		<img
 			class="p-2 h-[inherit] object-scale-down rounded-full"
-			src={ "/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%9) + ".png" }
+			src={ "/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%11) + ".png" }
 		/>
 		if isUser {
 			<div class="ml-3 text- font-semibold">(You)</div>

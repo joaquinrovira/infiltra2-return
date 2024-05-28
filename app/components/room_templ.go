@@ -333,7 +333,7 @@ func RoomWord(user string, room *model.Room) templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"inline-flex items-center justify-center\"><img class=\"h-16 w-16 md:h-20 md:w-20 object-scale-down\" src=\"/_/logo-rae.png\"> <span class=\"w-16\">Ver en la RAE</span></span></a></div>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"inline-flex items-center justify-center\"><img class=\"h-16 w-16 md:h-20 md:w-20 object-scale-down\" src=\"/_/img/logo-rae.png\"> <span class=\"w-16\">Ver en la RAE</span></span></a></div>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -385,9 +385,9 @@ func UserCardSmol(user string, state model.UserRoomState, isUser bool) templ.Com
 			return templ_7745c5c3_Err
 		}
 		var templ_7745c5c3_Var18 string
-		templ_7745c5c3_Var18, templ_7745c5c3_Err = templ.JoinStringErrs("/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%9) + ".png")
+		templ_7745c5c3_Var18, templ_7745c5c3_Err = templ.JoinStringErrs("/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%11) + ".png")
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 126, Col: 85}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 126, Col: 86}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var18))
 		if templ_7745c5c3_Err != nil {
@@ -504,9 +504,9 @@ func UserCard(user string, state model.UserRoomState, isUser bool) templ.Compone
 			return templ_7745c5c3_Err
 		}
 		var templ_7745c5c3_Var23 string
-		templ_7745c5c3_Var23, templ_7745c5c3_Err = templ.JoinStringErrs("/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%9) + ".png")
+		templ_7745c5c3_Var23, templ_7745c5c3_Err = templ.JoinStringErrs("/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%11) + ".png")
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 163, Col: 84}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 163, Col: 85}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var23))
 		if templ_7745c5c3_Err != nil {

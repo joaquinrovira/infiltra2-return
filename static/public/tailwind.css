@@ -637,24 +637,12 @@ html,
   bottom: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.left-\[calc\(-0\.35_\*_var\(--circle-radius\)\)\] {
-  left: calc(-0.35 * var(--circle-radius));
-}
-
 .left-\[calc\(-0\.39_\*_var\(--circle-radius\)\)\] {
   left: calc(-0.39 * var(--circle-radius));
 }
 
 .top-0 {
   top: 0px;
-}
-
-.top-\[calc\(-0\.35_\*_var\(--circle-radius\)\)\] {
-  top: calc(-0.35 * var(--circle-radius));
 }
 
 .top-\[calc\(-0\.39_\*_var\(--circle-radius\)\)\] {
@@ -701,10 +689,6 @@ html,
 
 .mt-1 {
   margin-top: 0.25rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .mt-2 {
@@ -763,20 +747,12 @@ html,
   height: 6rem;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
 .h-\[calc\(2_\*_var\(--circle-radius\)\)\] {
   height: calc(2 * var(--circle-radius));
 }
 
 .h-\[calc\(3\.15_\*_var\(--circle-radius\)\)\] {
   height: calc(3.15 * var(--circle-radius));
-}
-
-.h-\[calc\(3_\*_var\(--circle-radius\)\)\] {
-  height: calc(3 * var(--circle-radius));
 }
 
 .h-\[inherit\] {
@@ -795,20 +771,12 @@ html,
   min-height: 100vh;
 }
 
-.w-0 {
-  width: 0px;
-}
-
 .w-12 {
   width: 3rem;
 }
 
 .w-16 {
   width: 4rem;
-}
-
-.w-\[720px\] {
-  width: 720px;
 }
 
 .w-\[calc\(2_\*_var\(--circle-radius\)\)\] {
@@ -940,18 +908,9 @@ html,
   border-width: 2px;
 }
 
-.border-t-4 {
-  border-top-width: 4px;
-}
-
 .border-amber-500 {
   --tw-border-opacity: 1;
   border-color: rgb(245 158 11 / var(--tw-border-opacity));
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-green-500 {
@@ -990,11 +949,6 @@ html,
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-zinc-300 {
@@ -1061,10 +1015,6 @@ html,
   padding-bottom: 1rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1106,14 +1056,6 @@ html,
 
 .text-\[calc\(1\.3_\*_var\(--text-size\)\)\] {
   font-size: calc(1.3 * var(--text-size));
-}
-
-.text-\[calc\(2_\*_\(var\(--circle-radius\)_-_1rem\)\)\] {
-  font-size: calc(2 * (var(--circle-radius) - 1rem));
-}
-
-.text-\[calc\(2_\*_var\(--circle-radius\)\)\] {
-  font-size: calc(2 * var(--circle-radius));
 }
 
 .text-\[calc\(var\(--text-size\)\)\] {
