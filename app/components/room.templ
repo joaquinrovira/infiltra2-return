@@ -119,7 +119,7 @@ templ RoomWord(user string, room *model.Room) {
 templ UserCardSmol(user string, state model.UserRoomState, isUser bool) {
 	<div class="flex flex-col text-center items-center">
 		<div class={ "rounded-full p-1 bg-gradient-to-br", BoolString(state.Ready, "from-red-500 to-amber-400", "from-green-500 to-blue-500") }>
-			<div class={ BoolString(state.Ready, "bg-amber-500/30", "bg-green-500/30"), "rounded-full bg-slate-300 flex justify-center h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-20 xl:w-20 transition-all box-border border-2 md:border-4 items-center " }>
+			<div class={ BoolString(state.Ready, "bg-amber-500/30", "bg-green-500/30"), "rounded-full flex justify-center h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-20 xl:w-20 transition-all box-border border-2 md:border-4 items-center " }>
 				<img
 					class="p-1 h-[inherit] w-[inherit] object-scale-down rounded-full"
 					src={ "/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%11) + ".png" }

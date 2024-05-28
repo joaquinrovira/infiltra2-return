@@ -384,7 +384,7 @@ func UserCardSmol(user string, state model.UserRoomState, isUser bool) templ.Com
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		var templ_7745c5c3_Var18 = []any{BoolString(state.Ready, "bg-amber-500/30", "bg-green-500/30"), "rounded-full bg-slate-300 flex justify-center h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-20 xl:w-20 transition-all box-border border-2 md:border-4 items-center "}
+		var templ_7745c5c3_Var18 = []any{BoolString(state.Ready, "bg-amber-500/30", "bg-green-500/30"), "rounded-full flex justify-center h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-20 xl:w-20 transition-all box-border border-2 md:border-4 items-center "}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var18...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
