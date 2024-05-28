@@ -23,11 +23,11 @@ func Layout() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"es\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"><title>Infiltrado 🔍</title><link rel=\"stylesheet\" href=\"/_/tailwind.css\" type=\"text/css\"><script src=\"/_/htmx@1.9.12.min.js\"></script><script src=\"/_/htmx@1.9.12.sse.js\"></script><script defer src=\"/_/alpine@3.13.8.min.js\"></script><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link href=\"https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap\" rel=\"stylesheet\"></head>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"es\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"><title>Infiltrado 🔍</title><link rel=\"stylesheet\" href=\"/_/tailwind.css\" type=\"text/css\"><script src=\"/_/htmx@1.9.12.min.js\"></script><script src=\"/_/htmx@1.9.12.sse.js\"></script><script defer src=\"/_/alpine@3.13.8.min.js\"></script><style>\n                @font-face {\n                    font-family: 'Cthulhumbus UG';\n                    src: url('/_/fonts/JMH-Cthulhumbus-UG.ttf');\n                }\n                @font-face {\n                    font-family: 'Cthulhumbus';\n                    src: url('/_/fonts/JMH-Cthulhumbus.otf');\n                }\n            </style></head>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		var templ_7745c5c3_Var2 = []any{"bg-zinc-50 min-h-[100vh] flex flex-col"}
+		var templ_7745c5c3_Var2 = []any{"bg-zinc-50 min-h-[100vh] flex flex-col font-cthulu"}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var2...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err

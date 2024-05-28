@@ -274,7 +274,7 @@ func RoomWord(user string, room *model.Room) templ.Component {
 			return templ_7745c5c3_Err
 		}
 		if HasSelectedWord(room) {
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"flex flex-col grow p-8 justify-center items-center container mx-auto\"><div class=\"text-center mb-6\"><span class=\"font-serif break-words text-5xl md:text-8xl capitalize font-medium\">")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"flex flex-col grow p-8 justify-center items-center container mx-auto\"><div class=\"text-center mb-6\"><span class=\"break-words text-5xl md:text-8xl capitalize font-medium\">")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -319,7 +319,7 @@ func RoomWord(user string, room *model.Room) templ.Component {
 					}
 				}
 			} else {
-				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<li>Persona introducida subrepticiamente en un grupo adversario, en territorio enemigo, etc.</li><li>Te recomiendo que finjas leer esta descripción.</li><li>Si ves que los demas entran a ver la definición en la RAE, también deberías aparentarlo.</li>")
+				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<li>Eres el infiltrado! <i>Disimula...</i></li><li>Te recomiendo que finjas leer esta descripción.</li><li>Si ves que los demas entran a ver la definición en la RAE, también deberías aparentarlo.</li><li>Persona introducida subrepticiamente en un grupo adversario, en territorio enemigo, etc.</li>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
@@ -409,7 +409,7 @@ func UserCardSmol(user string, state model.UserRoomState, isUser bool) templ.Com
 		var templ_7745c5c3_Var20 string
 		templ_7745c5c3_Var20, templ_7745c5c3_Err = templ.JoinStringErrs("/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%11) + ".png")
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 125, Col: 87}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 126, Col: 87}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var20))
 		if templ_7745c5c3_Err != nil {
@@ -422,7 +422,7 @@ func UserCardSmol(user string, state model.UserRoomState, isUser bool) templ.Com
 		var templ_7745c5c3_Var21 string
 		templ_7745c5c3_Var21, templ_7745c5c3_Err = templ.JoinStringErrs(util.UserName(user))
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 130, Col: 29}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 131, Col: 29}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var21))
 		if templ_7745c5c3_Err != nil {
@@ -469,7 +469,7 @@ func CountdownTimer(room *model.Room) templ.Component {
 		var templ_7745c5c3_Var23 string
 		templ_7745c5c3_Var23, templ_7745c5c3_Err = templ.JoinStringErrs(strconv.FormatFloat(constants.COUNTDOWN_TIME.Seconds(), 'f', -1, 32))
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 141, Col: 111}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 142, Col: 111}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var23))
 		if templ_7745c5c3_Err != nil {
@@ -528,7 +528,7 @@ func UserCard(user string, state model.UserRoomState, isUser bool) templ.Compone
 		var templ_7745c5c3_Var25 string
 		templ_7745c5c3_Var25, templ_7745c5c3_Err = templ.JoinStringErrs("/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%11) + ".png")
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 163, Col: 85}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 164, Col: 85}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var25))
 		if templ_7745c5c3_Err != nil {
@@ -551,7 +551,7 @@ func UserCard(user string, state model.UserRoomState, isUser bool) templ.Compone
 		var templ_7745c5c3_Var26 string
 		templ_7745c5c3_Var26, templ_7745c5c3_Err = templ.JoinStringErrs(util.UserName(user))
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 168, Col: 63}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `app/components/room.templ`, Line: 169, Col: 63}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var26))
 		if templ_7745c5c3_Err != nil {

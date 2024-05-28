@@ -246,11 +246,11 @@ func TextZoomInternal(BackgroundColorClass string) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\"><span class=\"text-[calc(var(--text-size))] relative font-serif bg-inherit\">Infiltrado")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\"><span class=\"text-[calc(var(--text-size))] relative bg-inherit\">Infiltrado")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		var templ_7745c5c3_Var15 = []any{"z-10 leading-[1.1] absolute font-serif whitespace-nowrap bg-inherit top-0 bottom-0 my-auto text-[calc(1.3_*_var(--text-size))]", ZoomedTextAnimation()}
+		var templ_7745c5c3_Var15 = []any{"z-10 leading-[1.1] absolute whitespace-nowrap bg-inherit top-0 bottom-0 my-auto text-[calc(1.3_*_var(--text-size))]", ZoomedTextAnimation()}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var15...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err

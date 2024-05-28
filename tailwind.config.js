@@ -11,7 +11,7 @@ module.exports = {
         secondaryDark: "rgb(var(--color-secondary-dark) / <alpha-value>)",
       },
       fontFamily: {
-        ["comic-title"]: '"Bangers", system-ui', // Adds a new `font-display` class
+        ["cthulu"]: '"Cthulhumbus", system-ui', // Adds a new `font-display` class
       },
     },
   },

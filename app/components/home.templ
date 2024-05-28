@@ -140,9 +140,9 @@ templ TextZoomInternal(BackgroundColorClass string) {
 	<div
 		class={ BackgroundColorClass, "mx-auto flex flex-col justify-center items-center relative" }
 	>
-		<span class="text-[calc(var(--text-size))] relative font-serif bg-inherit">
+		<span class="text-[calc(var(--text-size))] relative bg-inherit">
 			Infiltrado
-			<div class={ "z-10 leading-[1.1] absolute font-serif whitespace-nowrap bg-inherit top-0 bottom-0 my-auto text-[calc(1.3_*_var(--text-size))]", ZoomedTextAnimation() }>
+			<div class={ "z-10 leading-[1.1] absolute whitespace-nowrap bg-inherit top-0 bottom-0 my-auto text-[calc(1.3_*_var(--text-size))]", ZoomedTextAnimation() }>
 				Infiltrado
 			</div>
 			<div

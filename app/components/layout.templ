@@ -13,14 +13,21 @@ templ Layout() {
             <script src="/_/htmx@1.9.12.sse.js"></script>
             <script defer src="/_/alpine@3.13.8.min.js"></script>
 
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+            <style>
+                @font-face {
+                    font-family: 'Cthulhumbus UG';
+                    src: url('/_/fonts/JMH-Cthulhumbus-UG.ttf');
+                }
+                @font-face {
+                    font-family: 'Cthulhumbus';
+                    src: url('/_/fonts/JMH-Cthulhumbus.otf');
+                }
+            </style>
 
         </head>
 
 
-		<body class={"bg-zinc-50 min-h-[100vh] flex flex-col"}>
+		<body class={"bg-zinc-50 min-h-[100vh] flex flex-col font-cthulu"}>
             {children...}
 		</body>
     </html>
