@@ -1,7 +1,11 @@
 package main
 
 import (
+	"net/http"
+
+	"github.com/a-h/templ"
 	"github.com/go-chi/chi/v5"
+	"github.com/joaquinrovira/infiltra2-returns/app/components"
 	"github.com/joaquinrovira/infiltra2-returns/app/endpoints"
 	"github.com/joaquinrovira/infiltra2-returns/app/routes"
 	"github.com/samber/do/v2"
@@ -10,6 +14,7 @@ import (
 
 func useRoutes(mux *chi.Mux, services *do.RootScope) *chi.Mux {
 
+	mux.HandleFunc("GET /test", func(w http.ResponseWriter, r *http.Request) { templ.Handler(components.Test()).ServeHTTP(w,r) })
 	
 	mux.HandleFunc("GET " + routes.Home(), endpoints.Index)
 	mux.HandleFunc("GET " + routes.Lobby(), endpoints.Lobby())
