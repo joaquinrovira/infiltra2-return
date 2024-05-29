@@ -16,6 +16,7 @@ import (
 	"math/rand"
 )
 
+// bg-[#33233f]
 func Home() templ.Component {
 	return templ.ComponentFunc(func(ctx context.Context, templ_7745c5c3_W io.Writer) (templ_7745c5c3_Err error) {
 		templ_7745c5c3_Buffer, templ_7745c5c3_IsBuffer := templ_7745c5c3_W.(*bytes.Buffer)
@@ -265,7 +266,7 @@ func TextZoomInternal(BackgroundColorClass string) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		var templ_7745c5c3_Var15 = []any{BackgroundColorClass, "text-[calc(var(--text-size))] relative bg-inherit px-6 border-double border-y-8 border-[#eacc83]"}
+		var templ_7745c5c3_Var15 = []any{BackgroundColorClass, "text-[calc(var(--text-size))] relative px-6 border-double border-y-8 border-[#eacc83]"}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var15...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err

@@ -4,7 +4,7 @@ import (
 	"github.com/joaquinrovira/infiltra2-returns/app/constants"
 	"math/rand"
 )
-
+// bg-[#33233f]
 templ Home() {
 	@Layout() {
 		<div class="text-slate-300 flex flex-col flex-grow overflow-auto bg-gradient-to-b from-[#33233f] to-[#1a121f]">
@@ -235,7 +235,7 @@ templ TextZoomInternal(BackgroundColorClass string) {
 	<div
 		class="bg-inherit mx-auto flex flex-col justify-center items-center relative"
 	>
-		<span class={ BackgroundColorClass, "text-[calc(var(--text-size))] relative bg-inherit px-6 border-double border-y-8 border-[#eacc83]" }>
+		<span class={ BackgroundColorClass, "text-[calc(var(--text-size))] relative px-6 border-double border-y-8 border-[#eacc83]" }>
 			Infiltrado
 			<div class={ "z-10 leading-[1.1] absolute whitespace-nowrap bg-inherit top-0 bottom-0 my-auto text-[calc(1.3_*_var(--text-size))]", ZoomedTextAnimation() }>
 				Infiltrado
