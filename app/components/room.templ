@@ -8,7 +8,7 @@ import "github.com/joaquinrovira/infiltra2-returns/app/routes"
 import "github.com/joaquinrovira/infiltra2-returns/app/constants"
 
 templ RoomFull(user string, room *model.Room) {
-	@Layout() {
+	@ArtDecoLayout() {
 		<div class="contents" hx-ext="sse" sse-connect={ routes.RoomSSESpecific(room.Name()) }>
 			<div id="boost-target" class="contents" hx-get={ routes.RoomSpecific(room.Name()) } hx-trigger="sse:RoomUpdate delay:1s">
 				@Room(user, room)
