@@ -120,27 +120,27 @@ templ TextZoom(BackgroundColorClass string) {
 	@Animations()
 	<style>
         #TextZoomSm {
-            --circle-radius: 2.8rem;
-            --text-size: 5rem;
+            --circle-radius: 2.2rem;
+            --text-size: 3rem;
         }
         #TextZoomMd {
-            --circle-radius: 6rem;
-            --text-size: 10rem;
+            --circle-radius: 5rem;
+            --text-size: 7rem;
         }
 	</style>
-	<div id="TextZoomSm" class={ "md:hidden pb-5 w-full overflow-hidden", BackgroundColorClass }>
+	<div id="TextZoomSm" class={ "md:hidden pb-5 w-full overflow-hidden bg-inherit" }>
 		@TextZoomInternal(BackgroundColorClass)
 	</div>
-	<div id="TextZoomMd" class={ "max-md:hidden pb-5 w-full overflow-hidden", BackgroundColorClass }>
+	<div id="TextZoomMd" class={ "max-md:hidden pb-5 w-full overflow-hidden bg-inherit" }>
 		@TextZoomInternal(BackgroundColorClass)
 	</div>
 }
 
 templ TextZoomInternal(BackgroundColorClass string) {
 	<div
-		class={ BackgroundColorClass, "mx-auto flex flex-col justify-center items-center relative" }
+		class="bg-inherit mx-auto flex flex-col justify-center items-center relative"
 	>
-		<span class="text-[calc(var(--text-size))] relative bg-inherit">
+		<span class={ BackgroundColorClass, "text-[calc(var(--text-size))] relative bg-inherit px-6 border-double border-y-8 border-[#eacc83]" }>
 			Infiltrado
 			<div class={ "z-10 leading-[1.1] absolute whitespace-nowrap bg-inherit top-0 bottom-0 my-auto text-[calc(1.3_*_var(--text-size))]", ZoomedTextAnimation() }>
 				Infiltrado
