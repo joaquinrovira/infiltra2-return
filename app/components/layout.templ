@@ -29,8 +29,10 @@ templ Layout() {
         </head>
 
 
-		<body class={"relative bg-zinc-50 min-h-dvh flex flex-col font-cthulu"}>
-            {children...}
+		<body class={"bg-zinc-50 min-h-[100vh] font-cthulu"}>
+            <div class={"relative min-h-dvh flex flex-col"}>
+                {children...}
+            </div>
 		</body>
     </html>
 }
