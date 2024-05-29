@@ -2,9 +2,9 @@ package components
 
 templ Test() {
 	@Layout() {
-		<div class="p-2 text-slate-300 flex flex-col flex-grow overflow-auto bg-gradient-to-b from-[#33233f] to-[#1a121f]">
+		<div class="text-slate-300 flex flex-col flex-grow overflow-auto bg-gradient-to-b from-[#33233f] to-[#1a121f]">
 			<div class={ Hero(), "relative flex-grow" }>
-				<div class="p-8">
+				<div class="py-8">
 					<div style="" class="bg-inherit" x-data="{ room: undefined, custom: false }">
 						<div class="flex flex-col items-center justify-center pt-8 bg-inherit">
 							@TextZoom("bg-[#33233f]")
@@ -75,7 +75,7 @@ templ Test() {
 					</div>
 				</div>
 				// Top right
-				<div class="w-24 absolute top-0 right-0 -rotate-90">
+				<div class="w-24 absolute top-2 right-2 -rotate-90">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -96,7 +96,7 @@ templ Test() {
 					</svg>
 				</div>
 				// Top left
-				<div class="w-24 absolute top-0 left-0 rotate-180">
+				<div class="w-24 absolute top-2 left-2 rotate-180">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -117,7 +117,7 @@ templ Test() {
 					</svg>
 				</div>
 				// Bottom left
-				<div class="w-24 absolute bottom-0 left-0 rotate-90">
+				<div class="w-24 absolute bottom-2 left-2 rotate-90">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -138,7 +138,7 @@ templ Test() {
 					</svg>
 				</div>
 				// Bottom left
-				<div class="w-24 absolute bottom-0 right-0">
+				<div class="w-24 absolute bottom-2 right-2">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						xmlns:xlink="http://www.w3.org/1999/xlink"

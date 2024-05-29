@@ -27,7 +27,7 @@ func Layout() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		var templ_7745c5c3_Var2 = []any{"bg-zinc-50 min-h-[100vh] flex flex-col font-cthulu"}
+		var templ_7745c5c3_Var2 = []any{"relative bg-zinc-50 min-h-dvh flex flex-col font-cthulu"}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var2...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
