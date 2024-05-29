@@ -11,7 +11,7 @@ templ Home() {
 			<div class={ "relative flex flex-col flex-grow" }>
 				<div class="py-8 flex-grow">
 					<div style="" x-data="{ room: undefined, custom: false }">
-						<div class="flex flex-col items-center justify-center pt-8 bg-inherit">
+						<div class="flex flex-col items-center justify-center pt-8 bg-inherit tracking-widest">
 							@TextZoom("bg-[#33233f]")
 						</div>
 						<div class="flex flex-col items-center justify-center pt-10 p-3">
@@ -146,7 +146,7 @@ templ TextZoomInternal(BackgroundColorClass string) {
 	<div
 		class="bg-inherit mx-auto flex flex-col justify-center items-center relative"
 	>
-		<span class={ BackgroundColorClass, "text-[calc(var(--text-size))] relative px-6 border-double border-y-8 border-[#eacc83]" }>
+		<span class={ BackgroundColorClass, "text-[calc(var(--text-size))] relative px-2 border-double border-y-8 border-[#cdb476]" }>
 			Infiltrado
 			<div class={ "z-10 leading-[1.1] absolute whitespace-nowrap bg-inherit top-0 bottom-0 my-auto text-[calc(1.3_*_var(--text-size))]", ZoomedTextAnimation() }>
 				Infiltrado

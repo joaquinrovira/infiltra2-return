@@ -58,7 +58,7 @@ func Home() templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\"><div class=\"py-8 flex-grow\"><div style=\"\" x-data=\"{ room: undefined, custom: false }\"><div class=\"flex flex-col items-center justify-center pt-8 bg-inherit\">")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\"><div class=\"py-8 flex-grow\"><div style=\"\" x-data=\"{ room: undefined, custom: false }\"><div class=\"flex flex-col items-center justify-center pt-8 bg-inherit tracking-widest\">")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -255,7 +255,7 @@ func TextZoomInternal(BackgroundColorClass string) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		var templ_7745c5c3_Var15 = []any{BackgroundColorClass, "text-[calc(var(--text-size))] relative px-6 border-double border-y-8 border-[#eacc83]"}
+		var templ_7745c5c3_Var15 = []any{BackgroundColorClass, "text-[calc(var(--text-size))] relative px-2 border-double border-y-8 border-[#cdb476]"}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var15...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
