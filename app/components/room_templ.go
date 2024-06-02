@@ -561,7 +561,7 @@ func UserCard(user string, state model.UserRoomState, isUser bool) templ.Compone
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		var templ_7745c5c3_Var29 = []any{"w-3 h-3 rounded-full", BoolString(state.Ready, "bg-[#78ba5e]", "bg-[#ba705e]")}
+		var templ_7745c5c3_Var29 = []any{"min-w-3 min-h-3 rounded-full", BoolString(state.Ready, "bg-[#78ba5e]", "bg-[#ba705e]")}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var29...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err

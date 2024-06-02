@@ -161,7 +161,7 @@ script countdown(seconds int, targetElementId string) {
 templ UserCard(user string, state model.UserRoomState, isUser bool) {
 	<div class="flex items-center justify-center gap-4">
 		
-		<div class={ "w-3 h-3 rounded-full", BoolString(state.Ready, "bg-[#78ba5e]", "bg-[#ba705e]") }>
+		<div class={ "min-w-3 min-h-3 rounded-full", BoolString(state.Ready, "bg-[#78ba5e]", "bg-[#ba705e]") }>
 		</div>
 		
 		<img
