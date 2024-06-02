@@ -32,28 +32,29 @@ templ Room(user string, room *model.Room) {
 }
 
 templ ReadyButton(user string, room *model.Room) {
-	// TODO: 	Avoid errors when user presses multiple times.
-	//			Replace with link to /room/:id/ready or /room/:id/not-ready
 	<form class="contents" hx-boost="true" hx-target="#boost-target" action={ templ.SafeURL(routes.ReadySpecific(room.Name())) }>
-		<div class="sticky bottom-0">
-			if !UserReady(user, room) {
+		<div class="sticky bottom-0 p-12">
+
+			if !UserReady(user,room) {
 				<button
 					type="submit"
-					class="
-						h-16 w-full transition-colors 
-						hover:bg-green-300 hover:text-black/70 
-						bg-green-500 text-white/90 
-						font-bold text-2xl"
+					class={ "border-8 border-double h-16 w-full transition-colors font-bold text-2xl bg-[#1b1220]" }
+					style="
+						border-image-slice: 1;
+						border-width: 0.25rem;
+					  	border-image-source: linear-gradient(to right bottom, #8fbc6b, #a2bf6c, #b4c26f, #c5c573, #d5c879, #d5c072, #d5b76c, #d5af66, #c59a51, #b6843d, #a6702a, #965b17);
+					"
 				>Iniciar ronda</button>
 			} else {
 				<button
 					type="submit"
-					class="
-						h-16 w-full transition-colors 
-						hover:bg-amber-300 hover:text-black/70 
-						bg-amber-500 text-white/90 
-						font-bold text-2xl"
-				>Espera!</button>
+					class={ "border-8 border-double h-16 w-full transition-colors font-bold text-2xl bg-[#1b1220]" }
+					style="
+						border-image-slice: 1;
+						border-width: 0.25rem;
+					  	border-image-source: linear-gradient(to right bottom, #bc806b, #c88d6e, #d29a72, #dba876, #e3b77b, #dfb474, #dab26d, #d5af66, #c59a51, #b6843d, #a6702a, #965b17);
+					"
+				>Cancelar</button>
 			}
 		</div>
 	</form>
@@ -164,7 +165,7 @@ templ UserCard(user string, state model.UserRoomState, isUser bool) {
 		</div>
 		
 		<img
-			class="pl-4 w-24 object-scale-down rounded-full"
+			class="pl-4 w-24 object-scale-down rounded-2xl"
 
 			src={ "/_/img/user/user_" + strconv.Itoa(util.UserIdStringToInt(user)%11) + ".png" }
 		/>
