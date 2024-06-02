@@ -30,7 +30,7 @@ func ArtDecoLayout() templ.Component {
 				templ_7745c5c3_Buffer = templ.GetBuffer()
 				defer templ.ReleaseBuffer(templ_7745c5c3_Buffer)
 			}
-			var templ_7745c5c3_Var3 = []any{"text-[#f1e6d4] bg-gradient-to-b from-[#33233f] to-[#1a121f] min-h-[100vh] font-cthulu"}
+			var templ_7745c5c3_Var3 = []any{"text-[#f1e6d4] fill-[#baa05e] border-[#baa05e] bg-gradient-to-b from-[#33233f] to-[#1a121f] min-h-[100vh] font-cthulu"}
 			templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var3...)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
