@@ -398,7 +398,7 @@ func UserCardSmol(user string, state model.UserRoomState, isUser bool) templ.Com
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		var templ_7745c5c3_Var20 = []any{"rounded-full p-1 bg-gradient-to-br", BoolString(state.Ready, "from-red-500 to-amber-400", "from-green-500 to-blue-500")}
+		var templ_7745c5c3_Var20 = []any{"rounded-full p-1 bg-gradient-to-br", BoolString(!state.Ready, "from-red-500 to-amber-400", "from-green-500 to-blue-500")}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var20...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
